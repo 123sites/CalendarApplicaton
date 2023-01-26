@@ -23,13 +23,24 @@ function displayHours(){
   for (let i = 5; i < workHours.length; i++) {
    console.log(workHours[i]);
 
-function coloredTimeBlocks() {
-  var hour = moment().hours();
 
-  $(".time-block").each(function() {
+//     if (hrNow > hr) {
+//         $(this).addClass("future");
+//     } else if (currHour === hr) {
+//         $(this).addClass("present");
+//     } else {
+//         $(this).addClass("past");
+//     }
+// })
+// };
+
+function coloredTimeBlocks() {
+  var hr = moment().hours();
+
+  $(".timeBlock").each(function() {
     var currHour = parseInt($(this).attr("id"));
 
-console.log("time-block"); 
+console.log("timeBlock"); 
 
 // saveBtn for time block
 saveBtn.on("click", function() {
@@ -47,10 +58,10 @@ saveBtn.on("click", function() {
 function usePlanner() {
 
   $(".hr").each(function() {
-      var currHour = $(this).text();
-      var currPlan = localStorage.getItem(hrNow);
+      var hrNow = $(this).text();
+      var now = localStorage.getItem(hrNow);
 
-      console.log(hour);
+      console.log(hr);
 
       if(now !== null) {
           $(this).siblings(".plan").val(now);
@@ -63,17 +74,7 @@ function usePlanner() {
 */
 
 coloredTimeBlocks();
-usePlanner();
-
-//     if (currHour > hour) {
-//         $(this).addClass("future");
-//     } else if (currHour === hour) {
-//         $(this).addClass("present");
-//     } else {
-//         $(this).addClass("past");
-//     }
-// })
-// };
+useIt();
 
 
 
@@ -83,6 +84,18 @@ usePlanner();
    
   }
   )}}}})
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Title, subtitle, and current date at the top.
 
