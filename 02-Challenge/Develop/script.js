@@ -12,7 +12,7 @@
 var saveBtn = $(".saveBtn");
 
 // moment().format('MMMM Do YYYY, h:mm:ss a'); (add append to the html)
-// $("#currentDay").text(moment().format('dddd MMMM Do YYYY'));
+$("#currentDay").text(moment().format('dddd MMMM Do YYYY'));
 
 // Functions
 
