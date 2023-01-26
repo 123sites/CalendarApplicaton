@@ -16,7 +16,7 @@ textarea {
   white-space: pre-wrap;
 }
 
-.time-block {
+.timeBlk {
   border-radius: 15px;
 }
 
@@ -24,7 +24,7 @@ textarea {
   border-top: 1px solid white;
 }
 
-.hour {
+.hr {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;

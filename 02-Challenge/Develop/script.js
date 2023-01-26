@@ -39,12 +39,11 @@ saveBtn.on("click", function() {
   var time = $(this).siblings(".hr").text();
   var plan = $(this).siblings(".plan").val();
 
-  // THEN the text for that event is saved in local storage
+  // Text for that event is saved in local storage
   localStorage.setItem(time, plan);
 });
 
-// WHEN I refresh the page
-// THEN the saved events persist
+// WHEN I refresh the page. THEN the saved events persist
 function useIt() {
 
   $(".hr").each(function() {
@@ -59,7 +58,7 @@ function useIt() {
   });
 }
 
-// CALL FUNCTIONS/
+// Call functions/
 coloredTimeBlks();
 useIt();
 
