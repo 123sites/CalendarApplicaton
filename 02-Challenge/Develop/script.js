@@ -4,9 +4,10 @@
 // SO THAT I can manage my time effectively
 
 // var
-var saveBtn =
+var saveBtn = $(".saveBtn");
 
 // moment().format('MMMM Do YYYY, h:mm:ss a'); (add append to the html)
+// $("#currentDay").text(moment().format('dddd MMMM Do YYYY'));
 
 // Functions
 
@@ -21,19 +22,67 @@ var inputEl = $('#input')
 function displayHours(){
   for (let i = 5; i < workHours.length; i++) {
    console.log(workHours[i]);
-    
-   clickEventListener
-   
 
+function coloredTimeBlocks() {
+  var hour = moment().hours();
 
+  $(".time-block").each(function() {
+    var currHour = parseInt($(this).attr("id"));
 
-   localStorage
-   
-  }
+console.log("time-block"); 
+
+// saveBtn for time block
+saveBtn.on("click", function() {
+
+  console.log(); //save button
+  var time = $(this).siblings(".hr").text();
+  var plan = $(this).siblings(".plan").val();
+
+  // THEN the text for that event is saved in local storage
+  localStorage.setItem(time, plan);
+});
+
+// WHEN I refresh the page
+// THEN the saved events persist
+function usePlanner() {
+
+  $(".hr").each(function() {
+      var currHour = $(this).text();
+      var currPlan = localStorage.getItem(hrNow);
+
+      console.log(hour);
+
+      if(now !== null) {
+          $(this).siblings(".plan").val(now);
+      }
+  });
 }
 
-displayHours()
-});
+/**
+* CALL FUNCTIONS
+*/
+
+coloredTimeBlocks();
+usePlanner();
+
+//     if (currHour > hour) {
+//         $(this).addClass("future");
+//     } else if (currHour === hour) {
+//         $(this).addClass("present");
+//     } else {
+//         $(this).addClass("past");
+//     }
+// })
+// };
+
+
+
+  // clickEventListener
+  
+  //  localStorage
+   
+  }
+  )}}}})
 
 // Title, subtitle, and current date at the top.
 
@@ -71,4 +120,3 @@ displayHours()
 
 
 // Call functions
-
