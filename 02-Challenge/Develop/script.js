@@ -23,12 +23,13 @@ $(function () {
 var workHours = [9,10,11,12,13,14,15,16,17]
 
 var inputEl = $('.hr')
+},)
 
 function timeBlk(){
   for (let i = 5; i < workHours.length; i++) {
    console.log(workHours[i]);
-
-
+  }
+}
 function coloredTimeBlks() {
   var hr = moment().hours();
 
@@ -44,6 +45,8 @@ if (hrNow > hr) {
 } else {
   $(this).addClass("past");
 }
+  })
+};
 
 // saveBtn for time block
 saveBtn.on("click", function() {
@@ -55,7 +58,7 @@ saveBtn.on("click", function() {
   // Text for that event is saved in local storage
   localStorage.setItem(time, description);
 });
-
+  
 // WHEN I refresh the page. THEN the saved events persist
 function useIt() {
 
@@ -80,8 +83,7 @@ useIt();
   
 
    
-  }
-  )}}}})
+
 
 
 
