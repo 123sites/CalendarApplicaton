@@ -12,7 +12,7 @@
 var saveBtn = $(".saveBtn");
 
 // moment().format('MMMM Do YYYY, h:mm:ss a'); (add append to the html)
-$("#currentDay").text(moment().format('dddd MMMM Do YYYY'));
+// $("#currentDay").text(moment().format('dddd MMMM Do YYYY'));
 
 // Functions
 
@@ -33,14 +33,22 @@ function coloredTimeBlks() {
   var hr = moment().hours();
 
   $(".timeBlk").each(function() {
-    var currHour = parseInt($(this).attr("id"));
+    var hrNow = parseInt($(this).attr("id"));
 
 console.log("timeBlk"); 
+
+if (hrNow > hr) {
+  $(this).addClass("future");
+} else if (hrNow === hr) {
+  $(this).addClass("present");
+} else {
+  $(this).addClass("past");
+}
 
 // saveBtn for time block
 saveBtn.on("click", function() {
 
-  console.log(); //save button
+  console.log(this); //save button
   var time = $(this).siblings(".hr").text();
   var plan = $(this).siblings(".plan").val();
 
@@ -68,11 +76,9 @@ function useIt() {
 coloredTimeBlks();
 useIt();
 
-
-
   // clickEventListener
   
-  //  localStorage
+
    
   }
   )}}}})
