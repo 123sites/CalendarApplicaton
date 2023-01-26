@@ -50,10 +50,10 @@ saveBtn.on("click", function() {
 
   console.log(this); //save button
   var time = $(this).siblings(".hr").text();
-  var plan = $(this).siblings(".plan").val();
+  var description = $(this).siblings(".description").val();
 
   // Text for that event is saved in local storage
-  localStorage.setItem(time, plan);
+  localStorage.setItem(time, description);
 });
 
 // WHEN I refresh the page. THEN the saved events persist
@@ -61,12 +61,12 @@ function useIt() {
 
   $(".hr").each(function() {
       var hrNow = $(this).text();
-      var currPlan = localStorage.getItem(hrNow);
+      var currDescript = localStorage.getItem(hrNow);
 
       console.log("localStorage.getItem(hrNow)");
 
-      if(currPlan !== null) {
-          $(this).siblings(".plan").val(currPlan);
+      if(currDescript !== null) {
+          $(this).siblings(".description").val(currDescript);
           console.log("localStorage.getItem(hrNow)");
       }
   });
