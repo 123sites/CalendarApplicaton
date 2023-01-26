@@ -17,30 +17,20 @@ var saveBtn = $(".saveBtn");
 $(function () {
 var workHours = [9,10,11,12,13,14,15,16,17]
 
-var inputEl = $('#input')
+var inputEl = $('.hr')
 
-function displayHours(){
+function timeBlk(){
   for (let i = 5; i < workHours.length; i++) {
    console.log(workHours[i]);
 
 
-//     if (hrNow > hr) {
-//         $(this).addClass("future");
-//     } else if (currHour === hr) {
-//         $(this).addClass("present");
-//     } else {
-//         $(this).addClass("past");
-//     }
-// })
-// };
-
-function coloredTimeBlocks() {
+function coloredTimeBlks() {
   var hr = moment().hours();
 
-  $(".timeBlock").each(function() {
+  $(".timeBlk").each(function() {
     var currHour = parseInt($(this).attr("id"));
 
-console.log("timeBlock"); 
+console.log("timeBlk"); 
 
 // saveBtn for time block
 saveBtn.on("click", function() {
@@ -55,25 +45,22 @@ saveBtn.on("click", function() {
 
 // WHEN I refresh the page
 // THEN the saved events persist
-function usePlanner() {
+function useIt() {
 
   $(".hr").each(function() {
       var hrNow = $(this).text();
-      var now = localStorage.getItem(hrNow);
+      var currPlan = localStorage.getItem(hrNow);
 
-      console.log(hr);
+      console.log("fuction useIt");
 
-      if(now !== null) {
-          $(this).siblings(".plan").val(now);
+      if(currPlan !== null) {
+          $(this).siblings(".plan").val(currPlan);
       }
   });
 }
 
-/**
-* CALL FUNCTIONS
-*/
-
-coloredTimeBlocks();
+// CALL FUNCTIONS/
+coloredTimeBlks();
 useIt();
 
 
