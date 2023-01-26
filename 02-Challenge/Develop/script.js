@@ -1,7 +1,12 @@
 // Acceptance Criteria
-// AS AN employee with a busy schedule
-// I WANT to add important events to a daily planner
-// SO THAT I can manage my time effectively
+// GIVEN I am using a daily planner to create a schedule:
+// 1) Open the planner, the current day is displayed at the
+//    top of the calendar.
+// 2) Scroll down, presented with timeblocks by business time.
+// 3) Timeblocks for that day color-coded, past, present, future.
+// 4) ***DONE***Click into a timeblock, can enter an event.
+// 5) Click save button for that timeblock, event text saved to LS.
+// 6) When I refresh the page, saved events are there.
 
 // var
 var saveBtn = $(".saveBtn");
@@ -50,10 +55,11 @@ function useIt() {
       var hrNow = $(this).text();
       var currPlan = localStorage.getItem(hrNow);
 
-      console.log("fuction useIt");
+      console.log("localStorage.getItem(hrNow)");
 
       if(currPlan !== null) {
           $(this).siblings(".plan").val(currPlan);
+          console.log("localStorage.getItem(hrNow)");
       }
   });
 }

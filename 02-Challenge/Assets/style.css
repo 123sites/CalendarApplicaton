@@ -1,21 +1,35 @@
 body {
   font-family: Nunito, sans-serif;
   font-size: 16px;
+  color:  #090787;
+}
+
+.line {
+  background-color: transparent;
+  color: black;
+  border-radius: 0;
+  border-bottom: 10px solid #88898C;
 }
 
 textarea {
   background: transparent;
-  border: none;
+  /* border: none; */
+  border-style: dashed;
   resize: none;
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .description {
   white-space: pre-wrap;
 }
 
+.border-dark {
+  color: #090787;
+}
 .timeBlk {
   border-radius: 15px;
 }
@@ -27,21 +41,22 @@ textarea {
 .hr {
   background-color: #ffffff;
   color: #000000;
-  border-top: 1px dashed #000000;
+  font-size: 20px;
+  border-top: 2px dashed black;
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color: rgb(248, 245, 212);
   color: white;
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: #f9857f;
   color: white;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: #80a9d8;
   color: white;
 }
 
@@ -49,7 +64,7 @@ textarea {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5;
+  background-color: #090787;
   color: white;
 }
 
