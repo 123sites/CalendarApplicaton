@@ -1,23 +1,29 @@
-# WorkCalendarApplicaton
-
+# WorkDayPlanner
 
 ## Description ✏️
 
-This was a challenge where I had to create an application that randomly created a password based on the given criteria.  It runs in the browser. I updated this by using JavaScript.  In addition, this application shows well on a laptop and a cell phone (see below images).
+- Acceptance Criteria
+I made an online daily planner for the work day schedule from 9 am to 5 pm.  Below is a list of its features.
 
-The password generated:
-1) Is 8-128 characters long.
-2) Confirms whether or not they want to include lowercase, uppercase, numeric, and/or special characters.
-3) The input is validated on the Console and has at least 1 character type selected.
-4) Afterwards, the password is displayed and written onto the webpage.
+1) Open the planner, the current day is displayed at the top of the calendar.
+2) Scroll down, presented with timeblocks by business time.
+3) Timeblocks for that day color-coded, past, present, future.
+4) Click into a timeblock, can enter an event.
+5) Click save button for that timeblock, event text saved to LS.
+6) When I refresh the page, saved events are there.
+
+- Additional features:
+1) I added that the save button changes color, while hovering on it.
+2) Also, while on a given day, you will see that the box you are on has a solid line.  The other boxes have dashed lines, so you know where you are on your planner.
 
 ## Installation 🔑
 
-There weren't any installations with this project.  You can find the link to the repository at:
+There weren't any installations with this project.  
+You can find the link to the repository at:
 [Repository link](https://github.com/123sites?tab=repositories)
 
 The link to the Random-Password-Generator is at:
-[Random-Password-Generator Link](https://github.com/123sites/Random-Password-Generator.git)
+[WorkDayPlanner Link](https://github.com/123sites/Random-Password-Generator.git)
 
 ## Screenshots 🎯
 
