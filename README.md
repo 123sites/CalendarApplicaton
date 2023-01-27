@@ -27,8 +27,8 @@ The link to the WorkDayPlanner is at:
 
 ## Screenshots 🎯
 
-[Screenshot](Assets/images/Screenshot_Empty_Planner.png)
-[Screenshot](Assets/images/Screenshot_with_partly_filled-in_%26_hover_color_change.png)
+[Screenshot_Empty_Planner](Assets/images/Screenshot_Empty_Planner.png)
+[Screenshot_Some_Filled_&_Hover_Color_Change](Assets/images/Screenshot_with_partly_filled-in_%26_hover_color_change.png)
 
 
 ## Credits 👈
