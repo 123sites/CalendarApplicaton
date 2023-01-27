@@ -21,9 +21,9 @@ The link to the Random-Password-Generator is at:
 
 ## Screenshots 🎯
 
-<img src="/Random-Password-Generator/Images/Laptop_Screenshot.png" alt="Laptop View">
+[Screenshot]()
+[Screenshot]()
 
-<img src="/Random-Password-Generator/Images/Cell phone screenshot.png" alt="Cell Phone View">
 
 ## Credits 👈
 
