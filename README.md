@@ -1,4 +1,4 @@
-# WorkDayPlanner
+# Work-Day-Planner
 
 ## Description ✏️
 
@@ -20,15 +20,15 @@ I made an online daily planner for the work day schedule from 9 am to 5 pm.  Bel
 
 There weren't any installations with this project.  
 You can find the link to the repository at:
-[Repository link](https://github.com/123sites/WorkDayPlanner)
+[Repository link](https://github.com/123sites/Work-Day-Planner)
 
 The link to the WorkDayPlanner is at:
-[WorkDayPlanner Link](https://123sites.github.io/WorkDayPlanner/)
+[Work-Day-Planner Link](https://123sites.github.io/Work-Day-Planner/)
 
 ## Screenshots 🎯
 
 [Screenshot_Empty_Planner](Assets/images/Screenshot_Empty_Planner.png)
-[Screenshot_Some_Filled_&_Hover_Color_Change](Assets/images/Screenshot_with_partly_filled-in_%26_hover_color_change.png)
+[Screenshot_Some_Filled_&_Hover_Color_Change](Assets/images/Screenshot%2C_partially_filled-in_and_hover_color_change.png)
 
 
 ## Credits 👈
