@@ -38,7 +38,7 @@ When I had trouble with this project, I first tried to problem-solve it myself. 
 ## License 📝
 
 The MIT license is in the GitHub repository.  
-[MIT License](https://github.com/123sites/CalendarApplicaton/blob/main/LICENSE)
+[MIT License](https://github.com/123sites/Work-Day-Planner/blob/main/LICENSE)
 
 ## Badges 🏆
 
