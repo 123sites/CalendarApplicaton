@@ -29,9 +29,6 @@ function coloredTimeBlks() {
   var hr = moment().hours();
   $(".timeBlk").each(function () {
     var hrNow = parseInt($(this).attr("id").split("-")[1]);
-    // console.log($(this).attr("id").split("-"))
-    // console.log($(this).attr("id").split("-")[1])
-    // console.log(hrNow, hr);
     if (hrNow > hr) {
       $(this).addClass("future");
     } else if (hrNow === hr) {
@@ -44,7 +41,6 @@ function coloredTimeBlks() {
 
 // saveBtn for time block
 saveBtn.on("click", function () {
-  // console.log(this); //save button
   var time = $(this).siblings(".hr").text();
   var description = $(this).siblings(".description").val();
   // Text for that event is saved in local storage.
@@ -56,10 +52,8 @@ function useIt() {
   $(".hr").each(function () {
     var hrNow = $(this).text();
     var currDescript = localStorage.getItem(hrNow);
-    // console.log("localStorage.getItem(hrNow)");
     if (currDescript !== null) {
       $(this).siblings(".description").val(currDescript);
-      // console.log("localStorage.getItem(hrNow)");
     }
   });
 }
